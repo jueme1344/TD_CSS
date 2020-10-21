@@ -1,0 +1,85 @@
+/* definition de la couleur du fond et la police*/
+
+body{
+    background-color:hsl(0, 0%, 98%) ;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* centrage de l'en tete */
+
+header{
+    text-align: center;
+}
+/* taille et couleur de mes titres */
+
+header h1{
+    font-weight: 200;
+    color:hsl(234, 12%, 34%)
+    
+}
+header h2{
+    font-weight: 600;
+    font-size: 32px;
+    color:hsl(234, 12%, 34%)
+}
+
+/* display pour les flex box et les marges*/
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 100px;
+    
+}
+
+p{
+    color: grey;
+}
+
+/* class card pour les cartes, largeur, hauteur, marges, couleur, et ombrage*/
+
+.card{
+    max-width: 350px;
+    height: 200px;
+    padding: 15px;
+    padding-top: 15px;
+    border-radius: 10px;
+    background: white;
+    margin: 20px 15px;
+    box-shadow: 2px 2px 15px rgb(216, 214, 214);
+}
+
+/*id color pour les bandeaux de couleur des cartes et la bordure*/
+
+#color1{
+    border-top: 5px solid cyan;
+}
+#color2{
+    border-top: 5px solid red;
+}
+#color3{
+    border-top: 5px solid orange;
+}
+#color4{
+    border-top: 5px solid blue;
+}
+
+/* position relative pour deplacer les images à droite*/
+
+img{
+    position: relative;
+    right: -270px;
+}
+
+/*pour rendre le site responsive*/
+
+@media(max-width:1200px){ /*largeur max de l'ecran d'ordi*/
+
+    main{
+        max-width: 400px;/*largeur max du mobile*/
+
+    }
+}
